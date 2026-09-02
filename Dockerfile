@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk-alpine
 WORKDIR /app
 
 # Copy built JAR
-COPY --from=build /app/target/food_adda-0.0.1-SNAPSHOT.jar app.jar
+COPY target/food_adda-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose port
 EXPOSE 8080
